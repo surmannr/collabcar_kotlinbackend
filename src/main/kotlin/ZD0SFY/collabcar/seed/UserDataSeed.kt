@@ -5,7 +5,7 @@ import java.util.*
 
 class UserDataSeed {
     companion object {
-        val users : List<User> = listOf(
+        val users : List<User> = mutableListOf(
             User(
                 id = 1,
                 name = "testuser",

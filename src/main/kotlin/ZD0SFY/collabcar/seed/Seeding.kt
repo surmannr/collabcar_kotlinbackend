@@ -8,6 +8,6 @@ import org.springframework.stereotype.Component
 @Component
 class Seeding(private val userRepository: UserRepository) : ApplicationRunner {
     override fun run(args: ApplicationArguments?) {
-        userRepository.saveAll(UserDataSeed.users)
+        userRepository.saveAllAndFlush(UserDataSeed.users)
     }
 }

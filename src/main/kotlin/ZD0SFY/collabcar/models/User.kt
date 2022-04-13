@@ -8,9 +8,9 @@ import java.util.Date
 class User (
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    var id: Int = 1,
+    var id: Int = 0,
 
-    @Column
+    @Column(unique=true)
     @NotNull
     var name: String = "",
 

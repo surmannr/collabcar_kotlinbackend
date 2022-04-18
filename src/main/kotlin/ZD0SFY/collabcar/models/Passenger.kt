@@ -19,5 +19,5 @@ class Passenger(
     var service: Service = Service(),
 
     @Column
-    val isAccepted: Boolean = false,
+    var isAccepted: Boolean = false,
 )

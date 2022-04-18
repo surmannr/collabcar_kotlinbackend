@@ -4,10 +4,10 @@ import jakarta.persistence.Column
 import jakarta.persistence.Embeddable
 
 @Embeddable
-class PassengerKey : java.io.Serializable {
+class PassengerKey (
     @Column(name = "user_id")
-    var userId: Int? = null
+    var userId: Int? = null,
 
     @Column(name = "service_id")
     var serviceId: Int? = null
-}
+) : java.io.Serializable
